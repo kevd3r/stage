@@ -1,0 +1,167 @@
+body{
+  margin: 0;
+  font-family: 'Roboto', regular;
+}
+
+/*font-family: 'Bungee Inline', cursive; utilisation CSS de la police*/
+
+
+/*css du header*/
+header{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1;
+  grid-row: auto;
+}
+
+nav{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: grid;
+  align-items: center;
+}
+
+
+ul{
+  padding: 2%;
+}
+
+li {
+  display: inline;
+  padding: 2%;
+}
+
+#menu_item {
+  display: inline;
+  text-decoration: none;
+  color: brown;
+  font-family: 'Roboto',regular;
+}
+
+#menu_item:hover{
+  color:white;
+  background-color: brown;
+  padding: 4%;
+}
+.main_title{
+  font-family: 'Bungee Outline', cursive;
+  grid-column-start: 4;
+  grid-column-end: 10;
+  align-items: center;
+  font-size: 1.5rem;
+  color: brown;
+  text-align: center;
+}
+
+/*ne pas oublier de rajouter un lien vers la panier et la recherche sur le site*/
+.shop_items{
+  grid-column-start: 10;
+  grid-column-end: 13;
+  display: flex;
+  margin-left: auto;
+  margin-right: 20%;
+}
+
+#images_shopping {
+  align-self: center;
+  height: 3vh;
+  padding:20%;
+}
+
+
+/*css du content*/
+.content{
+  z-index:1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+/*front image*/
+.img-front {
+  z-index: 3;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  max-width:50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+/*Huge homepage's title*/
+.eshop{
+  z-index: 2;
+  font-family: 'Roboto', bold;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  font-size: 15rem;
+  color: burlywood;
+  text-align: center;
+  margin: auto;
+}
+
+article {
+  margin-top: auto;
+  z-index: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  font-size: 1rem;
+  color: black;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: brown;
+  color: white;
+  text-decoration: none;
+  padding: 5%;
+  margin-bottom: 1%;
+
+}
+
+.right_carousel {
+  margin-top: auto;
+  grid-column-start: 10;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+  color: brown;
+}
+aside{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+/*faire en sorte que l'on voit tout le temps les icones*/
+#social_icons {
+  padding: 5%;
+  margin: 2%;
+}
+/*bottom elements*/
+footer {
+  display: flex;
+  background-color: rgb(152, 240, 192);
+}
+
+h3 {
+  align-items: flex-start;
+  text-align: left;
+  font-size: 2rem;
+  margin-top: 5%;
+  color: brown;
+}
+
+.categories>li {
+  display: inline-block;
+}

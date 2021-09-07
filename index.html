@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Outline&display=swap');
+    </style>
+    <title>My Awesome Boutique</title>
+</head>
+<body>
+  <header>
+      <!--Navigation Menu high left-->
+    <nav>
+      <a class="menu_mobile"id="btn_mobile"><img src="icons/menu.svg" id="menu_mobile" alt="burger_menu"/></a>
+      <ul>
+          <!--penser à faire passer le current sur un autre style quand sélectionné-->
+        <li><a id="menu_item" href="#">Home</a></li>
+        <li><a id="menu_item" href="#">About</a></li>
+        <li><a id="menu_item" href="#">Categories</a></li>
+        <li><a id="menu_item" href="#">Boutique</a></li>
+      </ul>
+      
+    </nav>  
+      <!--Website logo-->
+    <div class="main_title"><h1>My Awesome Boutique</h1></div>
+      <!--High right menu-->
+<!--doit se comporter autrement quand il y a quelque chose dans le panier-->
+    <div class="shop_items">
+      <a href="#" id="images_shopping"><img  src="icons/search.svg" alt="search_bar"/></a>
+      <a href="#" id="images_shopping"><img  src="icons/shopping_basket.svg" alt="shopping_basket"/></a>
+    </div>
+    
+  </header>
+
+  <!--Content-->
+  
+  <div class="content">
+  <!--Main page image-->
+    <img class="img-front" src="./images/photo_front_homepage.jpg" alt="front-image" >
+
+    <div class="eshop"><span>E-SHOP</span></div>
+    <article><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    Autem voluptates recusandae ad quas debitis cum fuga, blanditiis quidem voluptate 
+    voluptas quae, tempore saepe eum et adipisci sapiente commodi alias dolorum!</p>
+    <a href="#" class="btn">DISCOVER MORE</a>
+    </article>
+    <!--Social networks nav left bottom-->
+    <aside class="social">
+        <a target="_blank" href="https://fr-fr.facebook.com/"><img id="social_icons"src="icons/facebook.svg" alt="facebook"/></a><br>
+        <a target="_blank" href="https://www.instagram.com/?hl=fr"><img id="social_icons"src="icons/instagram.svg" alt="instagram"/></a><br>
+        <a target="_blank" href="https://twitter.com/fr"><img id="social_icons"src="icons/twitter.svg" alt="twitter"/></a><br>
+    </aside>
+    <!--carousel de défilement d'articles à faire-->
+    <div class="right_carousel">
+      <h3>Newest Releases</h3>
+    </div>
+  </div>
+  <!--Bottom categories : footer?-->
+  <footer>
+    <div class="footer">
+      <h3>CATEGORIES</h3>
+      <div class="categories">
+        <ul>
+          <li><a href="#">All</a></li>
+          <li><a href="#">Pop-Rock</a></li>
+          <li><a href="#">Electro</a></li>
+          <li><a href="#">Soul-Funk</a></li>
+          <li><a href="#">Chicago Blues</a></li>
+          <li><a href="#">Oldies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="social_mobile">
+      <a target="_blank" href="https://fr-fr.facebook.com/"><img id="social_icons_mobile"src="icons/facebook.svg" alt="facebook"/></a>
+      <a target="_blank" href="https://www.instagram.com/?hl=fr"><img id="social_icons_mobile"src="icons/instagram.svg" alt="instagram"/></a>
+      <a target="_blank" href="https://twitter.com/fr"><img id="social_icons_mobile"src="icons/twitter.svg" alt="twitter"/></a>
+    </div>
+  </footer>
+  </div>
+</body>
+</html>

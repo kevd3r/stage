@@ -1,0 +1,389 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', regular;
+  }
+/*-----------------Mobile----------------------*/
+@media screen and (max-width: 450px) {
+    /*header mobile css*/
+    header {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1;
+        grid-row: auto;
+    }
+    .main_title{
+        font-family: 'Bungee Outline', cursive;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        align-items: center;
+        font-size: 0.8rem;
+        color: brown;
+        text-align: center;
+    }
+ 
+    /*li configuration*/
+    ul{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        display: block;
+        margin: 0;
+    }
+    li {
+        list-style-type: none;
+        display:inline;
+    }
+      
+    #menu_item {
+        display: none;
+        text-decoration: none;
+        color: brown;
+        font-family: 'Roboto',regular;
+    }
+
+    /*menu mobile version*/
+    .menu_mobile {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        display: flex;
+    }
+    #menu_mobile {
+        transition: 0.5s ease-out;
+        height: 5vh;
+        width: auto;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    
+    /*menu_mobile behavior*/
+    #menu_mobile:hover{
+        transform: rotate(90deg);
+        background-color: brown;
+    }
+    nav:hover #menu_item{
+        display: block;
+    }
+    #menu_item:hover{
+        color:white;
+        background-color: brown;
+      }
+    /*shopping icon's css*/
+    .shop_items{
+        grid-column-start: 5;
+        grid-column-end: 6;
+        display: flex;
+        margin-left: auto;
+        margin-right: 30%;
+    }
+      
+    #images_shopping {
+        height: 10vh;
+        padding:30%;
+    }
+}
+
+/*content behavior*/
+/*css du content*/
+.content{
+    z-index:1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  
+  /*front image*/
+  .img-front {
+    z-index: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    max-width:80%;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*Huge homepage's title*/
+  .eshop{
+    z-index: 3;
+    font-family: 'Roboto', bold;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: 6rem;
+    color: burlywood;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 0.8;
+  }
+
+  article {
+    margin-top: auto;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    font-size: 1rem;
+    color: black;
+    text-align: left;
+    font-size: 1.1rem;
+  }
+  article>p{
+      display: none;
+  }
+  .btn {
+    display: inline-block;
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+    padding: 5%;
+    margin-bottom: 1%;
+  }
+  
+  .right_carousel {
+    z-index: 3;
+    margin-top: auto;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    color: brown;
+    display: none;
+  }
+
+  aside{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display:none;
+  }
+  
+  /*faire en sorte que l'on voit tout le temps les icones*/
+  #social_icons {
+    padding: 5%;
+    margin: 2%;
+  }
+
+  /*----- footer's css----- */
+
+  footer h3{
+    align-self: center;
+    background-color: cadetblue;
+    font-size: 2rem;
+  }
+
+  .categories{
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+
+  }
+  .categories ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .categories ul li{
+    font-size: 0.7rem;
+    width: 15%;
+    text-align: center;
+    background-color: brown;
+    }
+    .categories ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    .categories ul li:hover{
+        background-color: blanchedalmond;
+    }
+    .categories ul li a:hover{
+        color: brown;
+    }
+
+    .social_mobile{
+        display: flex;
+        justify-content: center;
+    }
+    #social_icons_mobile{
+        margin: 1vw;
+    }
+  /*------------------------- other device's css ---------------------*/
+@media screen and (min-width:768px) {
+    body{
+        margin: 0;
+        font-family: 'Roboto', regular;
+      }
+      
+      /*font-family: 'Bungee Inline', cursive; utilisation CSS de la police*/
+      
+      
+      /*css du header*/
+      header{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1;
+        grid-row: auto;
+      }
+      
+      nav{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        display: grid;
+        align-items: center;
+      }
+      .menu_mobile{
+          display: none;
+      }
+      
+      ul{
+        padding: 2%;
+      }
+      
+      li {
+        display: inline;
+        padding: 2%;
+      }
+      
+      #menu_item {
+        display: inline;
+        text-decoration: none;
+        color: brown;
+        font-family: 'Roboto',regular;
+      }
+      
+      #menu_item:hover{
+        color:white;
+        background-color: brown;
+      }
+      .main_title{
+        font-family: 'Bungee Outline', cursive;
+        grid-column-start: 4;
+        grid-column-end: 10;
+        align-items: center;
+        font-size: 1.5rem;
+        color: brown;
+        text-align: center;
+      }
+      
+      /*ne pas oublier de rajouter un lien vers la panier et la recherche sur le site*/
+      .shop_items{
+        grid-column-start: 10;
+        grid-column-end: 13;
+        display: flex;
+        margin-left: auto;
+        margin-right: 20%;
+      }
+      
+      #images_shopping {
+        align-self: center;
+        height: 3vh;
+        padding: 2vh;
+      }
+      
+      
+      /*css du content*/
+      .content{
+        z-index:1;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+      
+      /*front image*/
+      .img-front {
+        z-index: 2;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        max-width:50%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+      }
+      /*Huge homepage's title*/
+      .eshop{
+        z-index: 2;
+        font-family: 'Roboto', bold;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        font-size: 15rem;
+        color: burlywood;
+        text-align: center;
+        margin: auto;
+      }
+      
+      article {
+        margin-top: auto;
+        z-index: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        font-size: 1rem;
+        color: black;
+        text-align: left;
+        font-size: 1.1rem;
+      }
+      article p{
+          display: inline-block;
+      }
+      .btn {
+        display: inline-block;
+        background-color: brown;
+        color: white;
+        text-decoration: none;
+        padding: 5%;
+        margin-bottom: 1%;
+      }
+      
+      .right_carousel {
+        margin-top: auto;
+        grid-column-start: 10;
+        grid-column-end: 13;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        text-align: center;
+        color: brown;
+      }
+      aside{
+        display: inline;
+        z-index: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+      
+      /*faire en sorte que l'on voit tout le temps les icones*/
+      #social_icons {
+        padding: 5%;
+        margin: 2%;
+      }
+      /*bottom elements*/
+      /*footer {
+        display: flex;
+        background-color: rgb(152, 240, 192);
+      }
+      
+      h3 {
+        align-items: flex-start;
+        text-align: left;
+        font-size: 2rem;
+        margin-top: 5%;
+        color: brown;
+      }
+      
+      .categories>li {
+        display: inline-block;
+      }*/
+      .social_mobile{
+          display: none;
+      }
+}
